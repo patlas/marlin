@@ -325,8 +325,8 @@
  * Enable and connect the power supply to the PS_ON_PIN.
  * Specify whether the power supply is active HIGH or active LOW.
  */
-//#define PSU_CONTROL
-//#define PSU_NAME "Power Supply"
+#define PSU_CONTROL
+#define PSU_NAME "Power Supply"
 
 #if ENABLED(PSU_CONTROL)
   #define PSU_ACTIVE_STATE LOW      // Set 'LOW' for ATX, 'HIGH' for X-Box
@@ -770,7 +770,7 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          1000    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_ACCELERATION          1500    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  700    // E acceleration for retracts
 #define DEFAULT_TRAVEL_ACCELERATION   1500    // X, Y, Z acceleration for travel (non printing) moves
 
@@ -1117,11 +1117,7 @@
 
 // The size of the print bed
 #define X_BED_SIZE 200
-<<<<<<< HEAD
-#define Y_BED_SIZE 145
-=======
 #define Y_BED_SIZE 170
->>>>>>> 52cebbe9e30cf4f4686ec1e105274e14cc331098
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS -12
